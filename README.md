@@ -2,7 +2,7 @@
 
 Aplicación web desarrollada con React para registrar y gestionar vehículos deportivos mediante un formulario y una API REST local.
 
-Uso de IA
+##Uso de IA
 
 Durante el desarrollo del proyecto he utilizado ChatGPT como herramienta de apoyo.
 
