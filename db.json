@@ -1,0 +1,81 @@
+
+{
+  "coches": [
+    {
+      "id": 1,
+      "marca": "Ferrari",
+      "modelo": "296 GTB",
+      "color": "Rojo",
+      "anio": 2024,
+      "precio": 320000
+    },
+    {
+      "id": 2,
+      "marca": "Lamborghini",
+      "modelo": "Huracan",
+      "color": "Negro",
+      "anio": 2023,
+      "precio": 280000
+    },
+    {
+      "id": 3,
+      "marca": "Porsche",
+      "modelo": "911 GT3",
+      "color": "Blanco",
+      "anio": 2025,
+      "precio": 225000
+    }
+  ],
+  "marcas": [
+    {
+      "id": 1,
+      "nombre": "Ferrari",
+      "pais": "Italia",
+      "fundacion": 1939,
+      "electrico": true,
+      "web": "https://www.ferrari.com"
+    },
+    {
+      "id": 2,
+      "nombre": "Lamborghini",
+      "pais": "Italia",
+      "fundacion": 1963,
+      "electrico": true,
+      "web": "https://www.lamborghini.com"
+    },
+    {
+      "id": 3,
+      "nombre": "Porsche",
+      "pais": "Alemania",
+      "fundacion": 1931,
+      "electrico": true,
+      "web": "https://www.porsche.com"
+    }
+  ],
+  "concesionarios": [
+    {
+      "id": 1,
+      "nombre": "Auto Madrid",
+      "ciudad": "Madrid",
+      "direccion": "Calle Alcala 100",
+      "telefono": "910123456",
+      "activo": true
+    },
+    {
+      "id": 2,
+      "nombre": "Luxury Cars Barcelona",
+      "ciudad": "Barcelona",
+      "direccion": "Avenida Diagonal 200",
+      "telefono": "930123456",
+      "activo": true
+    },
+    {
+      "id": 3,
+      "nombre": "Motor Valencia",
+      "ciudad": "Valencia",
+      "direccion": "Calle Colon 50",
+      "telefono": "960123456",
+      "activo": false
+    }
+  ]
+}
