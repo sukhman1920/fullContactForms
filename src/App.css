@@ -120,14 +120,24 @@ button:disabled {
 
 .error {
   color: #ff7777;
-  font-size: 0.85rem;
-  margin-top: 0.3rem;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
   min-height: 1rem;
 }
 
 .success {
   color: #75d69a;
+  text-align: center;
+  padding: 0.7rem;
+  background: #183b29;
+  border-radius: 0.4rem;
   margin-bottom: 1rem;
+}
+
+.loading {
+  color: #d4af57;
+  text-align: center;
+  margin: 1rem;
 }
 
 .empty {

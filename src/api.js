@@ -3,6 +3,7 @@ import { carsResponseSchema } from "./schemas/carSchema";
 
 const API_URL = "http://localhost:3000";
 
+// Obtener todos los coches.
 export async function getCars() {
   const response = await fetch(`${API_URL}/coches`);
 
@@ -11,13 +12,23 @@ export async function getCars() {
   }
 
   const data = await response.json();
-  return carsResponseSchema.parse(data);
+
+  const result = carsResponseSchema.safeParse(data);
+
+  if (!result.success) {
+    throw new Error("La API ha devuelto datos incorrectos");
+  }
+
+  return result.data;
 }
 
+// Registrar un coche.
 export async function addCar(car) {
   const response = await fetch(`${API_URL}/coches`, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: {
+      "Content-Type": "application/json"
+    },
     body: JSON.stringify(car)
   });
 
@@ -28,10 +39,13 @@ export async function addCar(car) {
   return response.json();
 }
 
+// Actualizar un coche.
 export async function updateCar(car) {
   const response = await fetch(`${API_URL}/coches/${car.id}`, {
     method: "PUT",
-    headers: { "Content-Type": "application/json" },
+    headers: {
+      "Content-Type": "application/json"
+    },
     body: JSON.stringify(car)
   });
 
@@ -42,6 +56,7 @@ export async function updateCar(car) {
   return response.json();
 }
 
+// Eliminar un coche.
 export async function deleteCar(id) {
   const response = await fetch(`${API_URL}/coches/${id}`, {
     method: "DELETE"
